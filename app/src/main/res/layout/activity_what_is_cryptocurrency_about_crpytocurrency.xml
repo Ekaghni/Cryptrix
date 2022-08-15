@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darkBlue3"
+    android:layout_height="match_parent"
+
+    tools:context=".What_is_cryptocurrency_about_crpytocurrency">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="About Crypto"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is cryptocurrency?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Note- All the content sources are from wikipedia and google."
+                    android:textColor="@color/yellow"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_14sdp"
+            app:cardBackgroundColor="@color/darkBlue2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayouty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:text="A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers. A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_19ssp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Key Takeaways-"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_22ssp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> A cryptocurrency is a form of digital asset based on a network that is distributed across a large number of computers. This decentralized structure allows them to exist outside the control of governments and central authorities."
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> The word “cryptocurrency” is derived from the encryption techniques which are used to secure the network."
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Blockchains, which are organizational methods for ensuring the integrity of transactional data, are an essential component of many cryptocurrencies."
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Many experts believe that blockchain and related technology will disrupt many industries, including finance and law. "
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Cryptocurrencies face criticism for a number of reasons, including their use for illegal activities, exchange rate volatility, and vulnerabilities of the infrastructure underlying them. However, they also have been praised for their portability, divisibility, inflation resistance, and transparency. "
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/yellow"
+                        android:text="Source- Investopedia"
+                        android:gravity="right"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_22ssp"
+                        android:textColor="@color/blue"
+                        android:text="Crypto price and trend over years-"
+                        android:gravity="left"/>
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/crypto_trend_graph"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/yellow"
+                        android:text="Source- Google Trends"
+                        android:gravity="right"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+         </com.google.android.material.card.MaterialCardView>
+      </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darkBlue3"
+    android:layout_height="match_parent"
+
+    tools:context=".What_is_cryptocurrency_about_crpytocurrency">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="About Crypto"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Is cryptocurrency legal ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Note- All the content sources are from wikipedia and google."
+                    android:textColor="@color/yellow"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_14sdp"
+            app:cardBackgroundColor="@color/darkBlue2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayouty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:text="Cryptocurrencies are not illegal; anybody can buy, sell and trade cryptocurrencies. It’s unregulated; we do not have a regulatory framework to govern its functioning for now. However, the Indian government is exploring crypto regulation. Meanwhile, crypto exchanges like CoinSwitch Kuber have been key in supporting the government and helping investors join the bandwagon by self-regulating and obliging a thorough KYC check for all their investors."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_19ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/yellow"
+                        android:text="Source- Economic Times"
+                        android:gravity="right"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="NASSCOM Tweet-"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_22ssp"/>
+
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/crypto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/yellow"
+                        android:text="Source- Twitter"
+                        android:gravity="right"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="List of countries where crypto is illegal-"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_22ssp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Bolivia"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> China (Partially)"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Algeria"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Morocco"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> North Macedonia"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/white"
+                        android:text="--> Saudi Arabia"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_19ssp"
+                        android:textColor="@color/yellow"
+                        android:text="Source- Goodreturns"
+                        android:gravity="right"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Countries with most usage of cryptocurrency (2019)-"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_22ssp"/>
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/common_graph"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Some other stats-"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_22ssp"/>
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/data1"/>
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/data2"/>
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/data3"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+         </com.google.android.material.card.MaterialCardView>
+      </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

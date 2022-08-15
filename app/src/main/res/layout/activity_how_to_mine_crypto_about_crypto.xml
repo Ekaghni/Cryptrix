@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue3"
+    tools:context=".How_to_mine_crypto_about_crypto">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="About Crypto"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="How to mine cryptocurrencies ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Note- All the content sources are from wikipedia and google."
+                    android:textColor="@color/yellow"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardBackgroundColor="@color/darkBlue2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayouty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="There are a few ways you could go about cryptocurrency mining. I’ll cover the main ones here, and start from the easiest one - cloud mining."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Method #1 - Cloud Mining"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="If you’re looking for crypto mining ways, cloud mining is probably the most popular way to mine cryptocurrencies without having to lift a finger.
+
+Cloud mining is a process where you pay someone (most often it’s a big corporation) a specific amount of money and “rent out” their mining machine called a “rig”, and the process of mining itself.
+
+This rent lasts for an agreed-upon period, through which all of the earnings that the rig makes (minus the electricity and maintenance costs) are transferred to your cryptocurrency wallet.
+
+The people (companies) that offer these cloud mining services usually have huge mining facilities with multiple farms (tens or hundreds of rigs stacked and operating together) at their disposal and know perfectly well how to mine cryptocurrency.
+
+Cloud mining has become so popular mainly because it offers the possibility to participate in the world of cryptocurrencies for people who might not have enough money to buy their rigs or who perhaps simply aren’t interested in owning a rig"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/x1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="There are two options of cloud mining - free and paid. Naturally, a lot of people that are looking for ways to mine cryptocurrency would gravitate towards the “free” options, but it does have its drawbacks (very slow mining speeds, extra conditions, etc.). Paid cloud mining usually works like this:
+
+You find a cloud mining host online. You check out the plans that the host offers - there are usually four or five of these plans, ranging from the cheapest to the most expensive one; some hosts even offer you the ability to create and customize your cloud mining plan.
+
+Once you know what you want, you simply perform the transaction (meaning that you pay the host), register your cryptocurrency wallet code and that is how you make the first steps on how to mine cryptocurrency!
+
+Different plans cost different amounts of money and last for a variety of periods. The standard plans can go anywhere from $500 up to $5000, and last from two years to a lifetime.
+
+It is usually expected that you’ll break even at around the half-a-year - one year mark, and then profit from that point onwards. No one can know for sure, though, because the prices of cryptocurrencies are very volatile and their prices tend to sway by quite a bit."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- bitdegree"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Method #2 - CPU Mining"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="CPU mining utilizes processors to mine cryptocurrencies. It used to be a viable option back in the day, but currently, fewer and fewer people choose this method how to mine cryptocurrency daily.
+
+There are a couple of reasons why that is. First of all, CPU mining is EXTREMELY slow. You could go on for months without noticing the smallest amount of revenue.
+
+It’s also usually not worth it - you make very little amounts of money, but you probably spend ten times that amount on electricity and cooling. The problem mitigates itself by a bit if you can find a place that has nice cooling and cheap electricity bills, but that’s rarely the case.
+
+So why do people still even use CPU mining, then?
+
+Well, basically because anyone with a desktop computer could do it.
+
+All you need to be able to mine using the CPU method is just a computer and a couple of programs. It is possible to do it with a laptop, but it is VERY STRONGLY NOT ADVISED. Your laptop will probably fry and overheat in a matter of a couple of hours.
+
+The fact that it’s so easy to start cryptocurrency mining attracts new CPU miners every day. Some people that are looking for how to mine cryptocurrency don’t care about the details - they just want to start the process as soon as possible, and in any way possible."
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/cxv"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- bitdegree"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Method #3 - GPU Mining"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="GPU mining is probably the most popular and well-known method of mining cryptocurrencies. If you google “cryptocurrency mining”, GPU rigs are going to be some of the first things that you’ll see.
+
+Cloud miners, for example, use GPU rigs for their services. And these guys are professionals that sometimes have hundreds if not thousands of rigs, so they probably know what they’re doing, right?"
+                            android:gravity="left"/>
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/xvt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="GPU mining is very popular because it’s both efficient and relatively cheap. Don’t get me wrong, the construction of the rig itself tends to be costly - but when it comes to its hash speed and the general workforce, the GPU mining rig is great.
+
+GPU rigs utilize graphics cards to mine cryptocurrencies. One standard rig is made out of a processor, a motherboard, cooling, rig frame and - of course - a few (2 - 8) graphics cards.
+
+A typical price for a well-performing and nicely built GPU mining rig aims to be around the $3000 price range. It is a hefty investment but will pay off much faster than, let’s say, a CPU miner. People looking for ways how to mine cryptocurrency should check them out."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- bitdegree"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Method #4 - ASIC Mining"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="ASICs (Application-Specific Integrated Circuits) are special devices that are designed explicitly to perform a single task, which in this case is crypto mining.
+
+ASICs are very well known and treasured because they produce insane amounts of cryptocurrency when compared to its competitors' GPU and CPU.
+
+But if they are so good, why didn’t I mention them sooner?
+
+Well, mostly because they're a big subject of controversy.
+
+You see, when the ASIC company announced its new version of the machine, the announcement caused an uproar in the cryptocurrency community. Many people have called for an outright ban on these machines. Why?
+
+Because ASICS are so powerful, they rob other miners who are using GPU or CPU rigs of the possibility to keep up both in hash speeds and in earnings. Also, ASICs have twisted the economy of certain specific cryptocurrencies - imagine if the majority of earnings would go to one miner with an ASIC farm, what kind of chaos that would ensue."
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/zc"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- bitdegree"
+                            android:gravity="right"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue3"
+    tools:context=".How_to_invest_in_cryptocurrencies_about_crypto_trial">
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="About Crypto"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How to invest in crypto ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Note- All the content sources are from wikipedia and google."
+                    android:textColor="@color/yellow"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardBackgroundColor="@color/darkBlue2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayouty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="While some cryptocurrencies, including Bitcoin, are available for purchase with U.S. dollars, others require that you pay with bitcoins or another cryptocurrency. To buy cryptocurrencies, you’ll need a “wallet,” an online app that can hold your currency. Generally, you create an account on an exchange, and then you can transfer real money to buy cryptocurrencies such as Bitcoin or Ethereum. Here's more on how to invest in Bitcoin. Coinbase is one popular cryptocurrency trading exchange where you can create both a wallet and buy and sell Bitcoin and other cryptocurrencies. Also, a growing number of online brokers offer cryptocurrencies, such as eToro, Tradestation and Sofi Active Investing. Robinhood offers free cryptocurrency trades (Robinhood Crypto is available in most, but not all, U.S. states)."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- N Wallet"
+                            android:gravity="right"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Online brokers offering crypto-"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_22ssp"/>
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/online_brookers_offering_crypto"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- N Wallet"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="How to buy crypto in India ?"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="The popular Indian platforms include WazirX, Zebpay, Coinswitch Kuber and CoinDCX GO. The investors can also buy Bitcoin, Dogecoin, Ethereum and other cryptocurrencies through international trading platforms like Coinbase and Binance. Unlike stock markets, all of these platforms work 24x7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Step by step process to buy bitcoin or any other crypto on WazirX- "
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1. Create a WazirX Account: "
+                            android:textStyle="bold"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="@dimen/_20ssp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Go to the WazirX website, and click on the Sign up button."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Give your email address and create a strong password."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Go through the WazirX Terms of Service, then click on the checkbox if the terms suit you."
+                            android:gravity="left"/>
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="420dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/signup_wazirx"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Click on Sign Up to complete."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Now check your email inbox for a verification email, and on that email, tap the Verify Email option to complete the signup process."
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="420dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/w0"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> For the KYC verification process, select your country from the list of options given."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> You will now be asked for KYC verification."
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="420dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/w1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_13ssp"
+                            android:textColor="@color/blue"
+                            android:text="Now you have completed your account creation process!"
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="2. Deposit Funds: "
+                            android:textStyle="bold"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="@dimen/_20ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> You can make a deposit via UPI/IMPS/NEFT/RTGS. In this case, You’ll need to submit your transaction details to WazirX for verification purposes."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> You can make a deposit via IMPS/NEFT/RTGS. Here you can skip the submitting your transaction details part."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3. Buy Bitcoin: "
+                            android:textStyle="bold"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="@dimen/_20ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Visit the Exchange to find out the latest bitcoin price in India."
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="380dp"
+
+                            android:src="@drawable/w2"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> You can find the Buy and Sell options on your dashboard by scrolling down."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> After selecting Buy, put in your desired price in INR and the amount of Bitcoin you want to buy"
+                            android:gravity="left"/>
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="380dp"
+                            android:layout_marginTop="10dp"
+
+                            android:src="@drawable/w3"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Hit Place Buy Order, and simply wait for the order to be executed."
+                            android:gravity="left"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/yellow"
+                            android:text="Source- WazirX"
+                            android:gravity="right"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

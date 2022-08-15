@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "777715346502",
+    "project_id": "cryptrix-f9a82",
+    "storage_bucket": "cryptrix-f9a82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777715346502:android:ecd4eb541bdf51337e6e47",
+        "android_client_info": {
+          "package_name": "com.generic_corp.cryptrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777715346502-s2k5619mcba884lt7hmsab9e3mtid5jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP5pUI4GxK0BSvhX3dLMh1PW5jIPAX9Mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777715346502-s2k5619mcba884lt7hmsab9e3mtid5jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

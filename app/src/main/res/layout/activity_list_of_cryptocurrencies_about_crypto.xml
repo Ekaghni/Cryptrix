@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/darkBlue3"
+    android:layout_height="match_parent"
+    tools:context=".List_of_cryptocurrencies_about_crypto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="40dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/darkBlue4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:text="List of Cryptocurrecies"
+                android:textSize="@dimen/_24sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBlue2"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="1) Bitcoin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="2) Ethereum"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="3) Tether"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="4) Binance Coin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="5) Cardano"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="6) Dogecoin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="7) XRP"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="8) USD Coin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="9) Polkadot"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="10) Uniswap"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="11) Binance USD"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="12) Bitcoin Cash"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="13) Litecoin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="14) Solana"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="15) Chainlink"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="16) Polygon"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="17) THETA"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="18) Wrapped Bitcoin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="19) Stellar"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="20) Dai"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="21) VeChain"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="22) Ethereum Classic"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="23) TRON"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="24) Filecoin"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="25) Monero"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="26) EOS"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="27) SHIBA INU"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="28) Algorand"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="29) Aave"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="30) Amp"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="31) Klaytn"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="32) PancakeSwap"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="33) Bitcoin BEP2"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="34) Theta Fuel"/><TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:text="35) FTX Token"/>
+                    
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

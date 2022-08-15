@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darkBlue3"
+    android:layout_height="match_parent"
+    tools:context=".Support">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Cryptrix"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developer Details"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardBackgroundColor="@color/darkBlue2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayouty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:text="Name- Ekaghni Mukherjee"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+
+                            android:gravity="left"
+
+                            android:text="Email- ekaghni.mukherjee@gmail.com"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15ssp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="For any queries/ issues/ bugs/ suggestions, kindly mail the developer"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_19ssp" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Note-"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_22ssp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="A lot of sections is still under development and will be added soon. More cryptocurrencies will be added in the profit calculator, listings, live price, future prediction. Please be patient"
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:text="--------Disclaimer----------"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_22ssp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> This app is made for educational purpose only."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> Section 52 of the Copyright Act, 1957 stipulates permissible uses of the Copyright without specific authorization from the author. Therefore, the said Section allows legitimate use of the copyrighted work for educational, scientific and cultural advancement of the society."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> All the logos and images used in the app are used for educational purpose only and also giving credit to their respective authors"
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> All the live prices are average of 1 week and are updated every week"
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:textColor="@color/white"
+                            android:text="--> The investment calculator is based on the past data. We don't guarantee the prices will be exact as predicted."
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_19ssp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:textColor="@color/white"
+                            android:text="--> This app don't promote any organizations"
+                            android:gravity="left"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

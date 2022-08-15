@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.generic_corp.cryptrix">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cryptrix">
+        <activity android:name=".Support"></activity>
+        <activity android:name=".How_to_mine_crypto_about_crypto" />
+        <activity android:name=".List_of_cryptocurrencies_about_crypto" />
+        <activity android:name=".how_to_invest_in_cryptocurrencies" />
+        <activity android:name=".vechain_profit_calculator" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".dai_profit_calculator" />
+        <activity android:name=".stellar_profit_calculator" />
+        <activity android:name=".theta_profit_calculator" />
+        <activity android:name=".solana_profit_calculator" />
+        <activity android:name=".polygon_profit_calculator" />
+        <activity android:name=".chainlink_profit_calculator" />
+        <activity android:name=".litecoin_profit_calculator" />
+        <activity android:name=".uniswap_profit_calculator" />
+        <activity android:name=".polkadot_profit_calculator" />
+        <activity android:name=".xrp_profit_calculator" />
+        <activity android:name=".dogecoin_profit_calculator" />
+        <activity android:name=".cardano_profit_calculator" />
+        <activity android:name=".binance_profit_calculator" />
+        <activity android:name=".tether_profit_calculator" />
+        <activity android:name=".Future_prediction" />
+        <activity android:name=".Final_live_prices_about_crypto" />
+        <activity android:name=".Live_prices" />
+        <activity android:name=".How_to_invest_in_cryptocurrencies_about_crypto_trial" />
+        <activity android:name=".Is_cryptocurrency_legal_final" />
+        <activity android:name=".What_is_cryptocurrency_about_crpytocurrency" />
+        <activity android:name=".TrialAboutCrypto" />
+        <activity android:name=".EtheriumProfitCalculator" />
+        <activity android:name=".profitCalculatorRecyclerView" />
+        <activity android:name=".profitCalculator" />
+        <activity android:name=".LivePrices" />
+        <activity android:name=".AboutCrypto" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".SignupFirebase" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".IntroductoryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

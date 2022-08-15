@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Live_prices"
+    android:background="@color/darkBlue3">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/darkBlue4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/about_crypto_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Cryptrix"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/_16sdp"/>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/about_crpto_cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeader"
+        app:layout_constraintTop_toBottomOf="@id/viewHeader"
+        app:cardBackgroundColor="@color/darkBlue2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_crypto_textview_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live Prices"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Note- Prices shown below are average of 1 week"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_crpto_cardView_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkred"
+                app:cardCornerRadius="@dimen/_25sdp"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Crypto"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="140dp"
+                        android:text="Price"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="140dp"
+                        android:text="Status"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="@dimen/_70sdp"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardBackgroundColor="@color/darkBlue2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginLeft="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bitcoin"/>
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="@dimen/_50sdp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="BTC"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            android:layout_height="@dimen/_25sdp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Bitcoin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="italic"
+                            android:layout_height="@dimen/_25sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="@dimen/_50sdp">
+                        <TextView
+
+                            android:layout_width="match_parent"
+
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:layout_height="@dimen/_25sdp"/>
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Bitcoin"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="italic"
+                            android:layout_height="@dimen/_25sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_50sdp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            app:cardBackgroundColor="@color/red"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="25dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_baseline_arrow_downward_24"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="12.3 %"
+                                        android:textColor="@color/white"
+                                        android:gravity="center"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

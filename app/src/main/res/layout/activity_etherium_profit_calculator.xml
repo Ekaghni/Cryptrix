@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EtheriumProfitCalculator">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Profit Calculator"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:text="Enter Current Price of Etherium(INR): "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/priceOfOneCoinEtherium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/white"
+
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Enter The Amount You Are Investing (INR) "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceOfOneCoinEtherium"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <EditText
+
+        android:id="@+id/totalInvestmentEtherium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+
+
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:text="After how many years you want to know te profit ? "
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalInvestmentEtherium"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <EditText
+
+        android:id="@+id/incrementValueEtherium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/calculateButtonEtherium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Calculate"
+        android:textColor="@color/blue"
+        android:layout_marginTop="30dp"
+        app:layout_constraintVertical_bias="0"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incrementValueEtherium"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView_profitCalculator_Etherium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textColor="@color/lightWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButtonEtherium" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
